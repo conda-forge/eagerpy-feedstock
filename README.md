@@ -5,7 +5,7 @@ Home: https://eagerpy.jonasrauber.de/
 
 Package license: MIT
 
-Feedstock license: BSD 3-Clause
+Feedstock license: BSD-3-Clause
 
 Summary: EagerPy is a thin wrapper around PyTorch, TensorFlow Eager, JAX and NumPy that unifies their interface and thus allows writing code that works natively across all of them.
 
