@@ -1,17 +1,17 @@
 {% set name = "eagerpy" %}
-{% set version = "0.27.0" %}
+{% set version = "0.28.0" %}
 
 package:
-  name: "{{ name|lower }}"
-  version: "{{ version }}"
+  name: {{ name|lower }}
+  version: {{ version }}
 
 source:
-  url: "https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz"
-  sha256: 68b887c615178f5f881552d008673d7bbd702cf8dcac5c38179a55825c7bd0c7
+  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
+  sha256: 54292b4a3a58885cf03974d00532a1e680e877ab9d29d2ece65a8866897fbc9b
 
 build:
   number: 0
-  script: "{{ PYTHON }} -m pip install . -vv"
+  script: {{ PYTHON }} -m pip install . -vv
   noarch: python
 
 requirements:
@@ -33,7 +33,7 @@ about:
   license: MIT
   license_family: MIT
   license_file: LICENSE # PR here: https://github.com/jonasrauber/eagerpy/pull/7
-  summary: "EagerPy is a thin wrapper around PyTorch, TensorFlow Eager, JAX and NumPy that unifies their interface and thus allows writing code that works natively across all of them."
+  summary: EagerPy is a thin wrapper around PyTorch, TensorFlow Eager, JAX and NumPy that unifies their interface and thus allows writing code that works natively across all of them.
   doc_url: https://eagerpy.jonasrauber.de/
   dev_url: https://github.com/jonasrauber/eagerpy
 
