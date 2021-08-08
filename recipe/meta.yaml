@@ -1,5 +1,5 @@
 {% set name = "eagerpy" %}
-{% set version = "0.29.0" %}
+{% set version = "0.30.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: bd9cb9170dcb9eeb25b6fd90c827c665322f4e78b12ce845b93052f04d3a9408
+  sha256: 014c02b5a7f7e19f8471885cf8aa469f2e9cf518c88400f20b6b8db83d413106
 
 build:
   number: 0
